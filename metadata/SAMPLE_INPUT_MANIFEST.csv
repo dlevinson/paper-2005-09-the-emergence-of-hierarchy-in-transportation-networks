@@ -1,0 +1,7 @@
+filename,size_bytes,first_line,note
+Grid10.txt,3324,100,sample network/topology input copied from Bhanu Yerra Demo Java Classes
+Grid100.txt,419946,10000,sample network/topology input copied from Bhanu Yerra Demo Java Classes
+Grid15.txt,7684,225,sample network/topology input copied from Bhanu Yerra Demo Java Classes
+Grid20.txt,13844,400,sample network/topology input copied from Bhanu Yerra Demo Java Classes
+tc-1000.txt,160853,4663,sample network/topology input copied from Bhanu Yerra Demo Java Classes
+tc.txt,151530,4663,sample network/topology input copied from Bhanu Yerra Demo Java Classes

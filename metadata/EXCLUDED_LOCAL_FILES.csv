@@ -1,0 +1,8 @@
+source_area,category,package_status,rationale
+ARS-EmergenceOfHierarchy,draft manuscripts and submitted/publisher PDFs,excluded,paper/reference copies only; final paper copy already in paper/ for audit convenience
+ARS-EmergenceOfHierarchy,"reviewer replies, letters, copyright forms",excluded,correspondence/publisher paperwork is not data or code
+ARS-EmergenceOfHierarchy/HierarchyPresentation and BhanuPresentation.ppt,presentations/poster materials,excluded,"presentation support, not a reproducibility asset"
+ARS-EmergenceOfHierarchy/Emergence-Figures and JPEGS,figure/image folders,excluded,"derived figures or illustrative/reference images, not source data/code"
+Students/BhanuYerra/Programs/*/Java Classes/*.class,compiled Java classes,excluded,source .java files are included; compiled binaries are unnecessary for GitHub source archive
+Students/BhanuYerra/Experiments,experiment outputs,excluded,broad derived output set; staged package contains source and sample inputs needed to regenerate outputs
+Students/BhanuYerra/Thesis_Final.pdf and Thesis.doc,thesis/writeup,not copied,"potential contextual documentation, but the GitHub package is limited to paper, code, sample inputs, and program documentation"

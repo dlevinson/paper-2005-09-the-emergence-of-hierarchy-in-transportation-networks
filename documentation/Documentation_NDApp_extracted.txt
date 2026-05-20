@@ -1,0 +1,132 @@
+Documentation
+Bhanu Yerra
+
+
+General design requirements:
+
+Components necessary
+
+Component to run network dynamics program
+Component to browse the results in a graphical fashion
+Component to save the results and view them later
+
+Previously there were two separate programs to perform all these three tasks. One for task 1 and other for task 2 and task 3.  Moreover there were two programs to perform task 2 and task 3.  One for planar topology and other for both cylindrical and torus topologies.  
+
+There are two options in combing all the programs to perform all the three tasks: Applet and Application.  Advantages and disadvantages of each of these options are enlisted below.
+
+APPLET
+	Advantages:
+No Installations – access web and run the program
+Widely available and accessible
+A good education tool
+
+Disadvantages:
+Limit on size of network due to run time
+Limit on number of iterations due to run time
+Downloading and uploading codes – therefore a server is needed
+
+APPLICATION
+	Advantages:
+Similar to conventional applications – Familiarity
+Larger networks can be utilized
+Faster than applet
+Is an educational tool as well
+Research application
+
+Disadvantages:
+Needs to be installed – so less likely to be explored by non-tech people (needs to be downloaded and then installed)
+System Complications might exist
+
+
+
+NDApplication:
+
+NDApplication is a program that combines the three required tasks presented in the previous section.  It has the capability of opening a project and saving the results and viewing them later.
+
+How to open the application?
+	Double click the application file ‘NDApplication’.  Remember the directory ‘Java Classes’ should be in the same directory as the application file ‘NDApplication’.
+
+How to open a project file?  What does a project file contains?
+	When the application is opened it looks as shown below.  Go to ‘File’ menu and click on ‘Open Project …’ menu item.  Or just press the key combinations Shift+Command+o.  Then a file dialog box appears using which you can select a project file.
+
+
+Figure 1:	The project window of the NDApplication.
+
+	Project file stores the information on network file, land use file, output files ( if they are available), and coefficients used in that particular case.  You can open the project file in any text editor but please don’t manipulate it as such an event might corrupt the project file.  PLEASE BE PATIENT WHEN THE PROJECT FILE IS BEING OPENED, IT TAKES TIME TO READ ALL THE DATA.  Sometimes it takes more than 3 minutes.  I would suggest to wait until you see numbers ( in projects where output is available) in the ‘java console’ window that is opened as soon as a project is opened. 
+	Suggestions for improvement:	Multi-process the data reading steps and display a warning sign or something much user friendly to alert the user to be patient.
+
+How to change the network file or land use file in a project?
+	The features offered by this application to change the current network file or land use file in a project and then saving it as a different project helps in conducting more network dynamic tests.
+	Go to ‘Project’ Menu and click on either ‘Change Network’ or ‘Change Land Use’ to replace the existing files.  Please be aware that such changes are irreversible.  If any such unwanted changes are made, the only way to retrieve the project is by quitting the application without saving the project.  
+	Please also be aware that the file you wish to place in a project must be in the same directory of the project file.
+	Suggestions for improvement:	The application does not recognize the difference between network file and land use file. If accidentally a network file is read while trying to replace a land use file it might be disastrous.  To undo such an event replace the land use file again with the correct file.  Improvements like adding a alpha-numeric code at the beginning of network file and land use file to distinguish them from one another is a good idea.
+
+How to change the coefficients?  How to reset then back to default values?
+	Use the menu items in ‘Project > Change Coefficients’ to change the coefficients used in the model.
+	To reset them to the default values use ‘Project > Change Coefficients > Reset Default Coefficients’.
+
+How to run the network dynamics?
+	Before running the program make sure the network file and land use files are compatible by using the menu item ‘Project > Check Compatibility’.  Also, make sure that you specified the file names of your output files.  Specify the output file names by using ‘Project > Set Target Files’.  Please specify output file names that doesn’t already exist in that project directory.  If output file name specified already exist then that output file will be rewritten.
+
+How to browse through the results?
+	Once your results are available the project window can be used to browse through the results.  Use the browsing tools at the bottom of the project window as shown in Figure 2.  Use ‘<<’ to go to the results of the first iteration.  Use “<” to view the results of the previous iteration.  Use ‘>’ to view the results for the next interation.  Use “>>” to view the results of the last iteration.  Use the button marked “Initial Speeds” to view the speed distribution for the 0’th iteration.  Toggle the button “Speed” to “Volume” to
+
+
+Figure 2:	The browsing tools available to go through the stages of the network evolution.
+
+change between speeds and volume.  The label in the center show the current iteration. Please note that you cannot view the volume distribution for the 0th iteration.
+
+How to save the project?
+	After running your results you can save your project by using “File > Save”.  If you made any changes to the project like changing the coefficients or changing the network file or changing the land use file, saving a project will overwrite the project.  If you don’t wish to do that use the “File > Save as…” option to save it as a different project.  In which case you are creating a new project without overwriting the original project you opened.  Do remember that while using ‘Save as …” option don’t change the directory because the project file, network file and all other file should be in the same directory.
+
+What is the format of input files?
+	The format of network file is given below:
+3
+120 2 20 1 121 5.034 1.23
+121 20 2 2 120 5.034 2.45 122 2.501 1.23
+122 11 11 1 121 2.501 1.23
+
+In the above sample network file the first line is total number of nodes.
+From second line the node and end node attributes start.  The first number should be an integer that represents the node number.  Followed by the x and y coordinates as integer values.  Followed by number of links starting from this node.  Followed by end node numbers of the links, the link length (float value) and the speed of the link.
+
+	The sample format of the land use file…
+
+/////////    Land Use File
+3
+20 10 10
+10 20 10
+10 10 10
+10 20 10
+10 10 10
+10 10 20
+The first line is compulsory for every land use file.  The second line is number of land use cells.  The land use is assumed to be a square.  Followed by two 3X3 matrices.  The first matrix is the total number of trips produce from a land use cell and the second matrix is total number of trips attracted.
+
+10
+10
+10
+10
+20
+10
+20
+10
+10
+
+10
+10
+20
+10
+10
+10
+1020
+10
+Figure 3:	The land use cells with their attributes.
+
+Note that the matrix is inverted about the horizontal axis.  Note the position of 20s in the Figure 3 and their positions in the sample file.
+
+
+Trips Produced
+
+Trips Attracted
+
+
+
