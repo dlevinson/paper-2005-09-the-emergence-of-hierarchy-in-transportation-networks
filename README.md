@@ -42,7 +42,7 @@ The broader local paper folder contains drafts, reviewer replies, letters, copyr
 <!-- package-hardening-status:start -->
 ## Package Hardening Status
 
-Generated: 2026-05-20 13:10:44 AEST
+Generated: 2026-05-20 13:31:26 AEST
 
 - Pipeline: `READY-TO-UPLOAD/PUBLIC`
 - Sidecars added/updated: `PACKAGE_STATUS.md`, `PACKAGE_MANIFEST.csv`, `LICENSE_STATUS.md`.
