@@ -1,6 +1,6 @@
 # Package Status: The Emergence Of Hierarchy In Transportation Networks
 
-Generated: 2026-05-21 20:57:23 AEST
+Generated: 2026-05-22 06:51:10 AEST
 
 ## Audit State
 
@@ -15,7 +15,7 @@ Generated: 2026-05-21 20:57:23 AEST
 
 ## Package Checks
 
-- Files in manifest: 44
+- Files in manifest: 45
 - Paper reference files: 2
 - Code candidates: 28
 - Data candidates: 0

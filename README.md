@@ -23,6 +23,7 @@ Before making a public GitHub repository, add an explicit source-code license. N
 - `data/sample_network_inputs/`: sample network/topology inputs copied from the Demo `Java Classes` folder.
 - `documentation/Documentation_NDApp_original.doc`: original 2003 Word documentation for NDApplication.
 - `documentation/Documentation_NDApp_extracted.txt`: text extraction of the Word documentation.
+- `documentation/JAVA_COMPILE_VERIFICATION.md`: OpenJDK 17 compile-verification notes for normalized scratch copies of the legacy Java source.
 - `documentation/PAPER_FIRST_VALIDATION.md`: paper-first validation note.
 - `documentation/SOURCE_BOUNDARY.md`: inclusion and exclusion rationale.
 - `metadata/SOURCE_MANIFEST.csv`: file-level package manifest with checksums.
@@ -33,7 +34,7 @@ Before making a public GitHub repository, add an explicit source-code license. N
 
 The paper describes a network dynamics process using exogenous network and land-use inputs, Dijkstra least-cost paths, gravity OD estimation, traffic assignment, link revenue, maintenance/cost, investment, and iterative speed updates. The staged Java source implements that same sequence. In particular, `NetworkDynamics.java` calls `DijkstrasAlgo`, `TAssignment`, `Revenue`, and `Investment2`, and the program documentation describes project files, network and land-use files, coefficients, running the dynamics, and browsing speed/volume outputs.
 
-The source was inspected but not compiled in this pass because this Mac currently has no local Java runtime installed.
+On 2026-05-22, Homebrew OpenJDK 17.0.19 compile verification succeeded on normalized scratch copies of both preserved Java source trees. The original legacy source files in this package were not edited. The normalization required to compile on a modern JDK is documented in `documentation/JAVA_COMPILE_VERIFICATION.md`.
 
 ## Excluded Material
 
@@ -42,7 +43,7 @@ The broader local paper folder contains drafts, reviewer replies, letters, copyr
 <!-- package-hardening-status:start -->
 ## Package Hardening Status
 
-Generated: 2026-05-21 20:57:23 AEST
+Generated: 2026-05-22 06:51:10 AEST
 
 - Pipeline: `READY-TO-UPLOAD/PUBLIC`
 - Sidecars added/updated: `PACKAGE_STATUS.md`, `PACKAGE_MANIFEST.csv`, `LICENSE_STATUS.md`.
