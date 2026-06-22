@@ -1,5 +1,9 @@
 # The Emergence Of Hierarchy In Transportation Networks
 
+## Contribution
+
+This paper demonstrates how a hierarchy of major and minor roads can emerge without being centrally designed. Its network-evolution model couples traveler behavior with localized reinvestment of link revenues, showing that ordinary decentralized decisions can generate hierarchical routes and continuous roads as intrinsic properties of transportation networks.
+
 ## Bibliographic Information
 
 - Row ID: `paper-2005-09`
