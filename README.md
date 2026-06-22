@@ -17,7 +17,7 @@ This paper demonstrates how a hierarchy of major and minor roads can emerge with
 
 This package is intended for `UPLOADED` as a source-code and sample-input archive. The paper is simulation/model based and does not use human-subjects or restricted empirical microdata. The staged assets are the best available local model source corresponding to the paper.
 
-Before making a public GitHub repository, add an explicit source-code license. No privacy restriction was found in the staged assets.
+The author-created source code is released under MIT, with the remaining asset boundaries documented in `LICENSE.md`. No privacy restriction was found in the staged assets.
 
 ## Package Contents
 
@@ -52,5 +52,11 @@ Generated: 2026-05-22 07:46:52 AEST
 - Pipeline: `UPLOADED`
 - Sidecars added/updated: `PACKAGE_STATUS.md`, `PACKAGE_MANIFEST.csv`, `LICENSE_STATUS.md`.
 - Public paper-package repositories include `paper/` PDF reference copies by owner decision; publisher takedown requests can be handled later if they arise.
-- Final GitHub upload should use the manifest include statuses and the license-status note.
+- The repository license boundary is recorded in `LICENSE.md`.
 <!-- package-hardening-status:end -->
+
+## License
+
+See `LICENSE.md`. Author-created Java code is MIT licensed; author-created
+sample inputs and documentation are CC BY 4.0. Papers and third-party
+materials retain their original terms.

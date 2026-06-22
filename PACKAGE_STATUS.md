@@ -26,4 +26,4 @@ Generated: 2026-05-22 07:46:52 AEST
 
 - Use `PACKAGE_MANIFEST.csv` as the upload checklist.
 - Include `paper/` PDF reference copies in public paper-package repositories by owner decision; publisher takedown requests can be handled later if they arise.
-- Confirm finality and license before repository creation.
+- Repository uploaded; the operative license boundary is recorded in `LICENSE.md`.
